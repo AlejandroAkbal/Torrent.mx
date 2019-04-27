@@ -26,6 +26,9 @@ function toggleNav() {
     $toggler.toggleClass('text-dark', $(this).scrollTop() < $nav.height());
 }
 
+/* --- Stablish the current year so its always updated --- */
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 /* --- Here starts the initialization of the Particle.JS lib --- */
 particlesJS('particles', {
     "particles": {

@@ -25,6 +25,10 @@
     height: fill-available;
 }
 
+/* - general things related - */
+.button {}
+
+
 /* - navbar related - */
 .navbar {
     transition: background-color 0.35s linear, color 0.35s linear;
@@ -42,6 +46,7 @@
 
     border: 0 solid transparent;
     border-radius: 50rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 
     outline: 0;
     user-select: none;
@@ -56,5 +61,9 @@
 /* - howdoesthiswork related - */
 /* - footer related - */
 .bg-oscuro {
-    background-color: #1c2331;
+    background-color: #181A1B;
+}
+
+.brand {
+    background-color: #141617;
 }
