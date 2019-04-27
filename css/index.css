@@ -7,28 +7,6 @@
     scroll-behavior: smooth;
 }
 
-/* ---- particles.js container ---- */
-#particles {
-    z-index: -1;
-
-    background-image: url('../img/background.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* ---- components ---- */
-
-.vh-100 {
-    height: -webkit-fill-available;
-    height: -moz-available;
-    height: fill-available;
-}
-
-/* - general things related - */
-.button {}
-
-
 /* - navbar related - */
 .navbar {
     transition: background-color 0.35s linear, color 0.35s linear;
@@ -44,13 +22,13 @@
     font-weight: 600;
     line-height: 1.5;
 
-    border: 0 solid transparent;
+    border: 1 solid transparent;
     border-radius: 50rem;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 
     outline: 0;
     user-select: none;
-    transition: all 0.15s ease-in-out;
+    transition: all 0.30s ease-in-out;
 }
 
 .signup.scrolled {
@@ -58,7 +36,40 @@
     background: linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
 }
 
-/* - howdoesthiswork related - */
+/* ---- particles.js container ---- */
+#particles {
+    z-index: -1;
+
+    background-image: url('../img/background.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* - general things related - */
+.alejar {
+    padding-top: 50%;
+}
+
+.rounded-maximum {
+    border-radius: 50rem;
+}
+
+.vh-100 {
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: fill-available;
+}
+
+/* ---- components ---- */
+
+/* - dropbars related - */
+input {
+    outline: none !important;
+    border: none;
+    background: none;
+}
+
 /* - footer related - */
 .bg-oscuro {
     background-color: #181A1B;

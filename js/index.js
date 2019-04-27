@@ -20,14 +20,37 @@ function toggleNav() {
     var $links = $(".nav-link");
     var $brand = $(".navbar-brand");
     var $toggler = $(".navbar-toggler-icon");
+    var $signup = $(".signup");
     $nav.toggleClass('scrolled', $(this).scrollTop() < $nav.height());
     $links.toggleClass('text-dark', $(this).scrollTop() < $nav.height());
     $brand.toggleClass('text-dark', $(this).scrollTop() < $nav.height());
     $toggler.toggleClass('text-dark', $(this).scrollTop() < $nav.height());
+    $signup.toggleClass('scrolled', $(this).scrollTop() < $nav.height());
 }
 
 /* --- Stablish the current year so its always updated --- */
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+/* --- Stablish the current year so its always updated --- */
+/* --- GETTING IT READY FOR MAKING IT TOMORROW --- */
+$(".input_icon").click(function () {
+    var bar = this;
+    if ($(this).hasClass("magnet_icon")) {
+        if ($(".magnet").hasClass("active_bar")) {
+            console.log("Submit thingie now");
+        } else {
+            $(".magnet").addClass("active_bar");
+            $(".torrent").removeClass("active_bar");
+        }
+    } else if ($(this).hasClass("torrent_icon")) {
+        if ($(".torrent").hasClass("active_bar")) {
+            console.log("Submit thingie now");
+        } else {
+            $(".torrent").addClass("active_bar");
+            $(".magnet").removeClass("active_bar");
+        }
+    }
+});
 
 /* --- Here starts the initialization of the Particle.JS lib --- */
 particlesJS('particles', {
