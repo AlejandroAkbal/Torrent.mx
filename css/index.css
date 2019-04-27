@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 #particles {
@@ -16,5 +17,5 @@
 
 .navbar.scrolled {
     background-color: #fff !important;
-    transition: background-color 200ms linear;
+    transition: background-color 300ms linear, color 300ms linear;
 }

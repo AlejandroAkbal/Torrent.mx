@@ -2,9 +2,27 @@
 $(function () {
     $(document).scroll(function () {
         var $nav = $(".navbar");
+        var $links = $(".nav-link");
+        var $brand = $(".navbar-brand");
+        var $toggler = $(".navbar-toggler-icon");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        $links.toggleClass('text-dark', $(this).scrollTop() > $nav.height());
+        $brand.toggleClass('text-dark', $(this).scrollTop() > $nav.height());
+        $toggler.toggleClass('text-dark', $(this).scrollTop() > $nav.height());
     });
 });
+
+/* --- Here starts the function change of color of the navbar --- */
+function toggleNav() {
+    var $nav = $(".navbar");
+    var $links = $(".nav-link");
+    var $brand = $(".navbar-brand");
+    var $toggler = $(".navbar-toggler-icon");
+    $nav.toggleClass('scrolled', $(this).scrollTop() < $nav.height());
+    $links.toggleClass('text-dark', $(this).scrollTop() < $nav.height());
+    $brand.toggleClass('text-dark', $(this).scrollTop() < $nav.height());
+    $toggler.toggleClass('text-dark', $(this).scrollTop() < $nav.height());
+}
 
 /* --- Here starts the initialization of the Particle.JS lib --- */
 particlesJS('particles', {
