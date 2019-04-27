@@ -11,18 +11,19 @@
 #particles {
     z-index: -1;
 
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    min-height: -moz-available;
-    min-height: fill-available;
-
-    background-image: url('../img/bg11.jpg');
-    background-position: 50% 50%;
+    background-image: url('../img/background.jpg');
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 /* ---- components ---- */
+
+.vh-100 {
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: fill-available;
+}
 
 /* - navbar related - */
 .navbar {
@@ -51,3 +52,5 @@
     color: white !important;
     background: linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
 }
+
+/* - howdoesthiswork related - */
