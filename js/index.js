@@ -5,10 +5,12 @@ $(function () {
         var $links = $(".nav-link");
         var $brand = $(".navbar-brand");
         var $toggler = $(".navbar-toggler-icon");
+        var $signup = $(".signup");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         $links.toggleClass('text-dark', $(this).scrollTop() > $nav.height());
         $brand.toggleClass('text-dark', $(this).scrollTop() > $nav.height());
         $toggler.toggleClass('text-dark', $(this).scrollTop() > $nav.height());
+        $signup.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 });
 

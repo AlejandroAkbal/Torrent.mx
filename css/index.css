@@ -37,10 +37,17 @@
     background: white;
     color: #8089ff !important;
     font-weight: 600;
+    line-height: 1.5;
 
     border: 0 solid transparent;
     border-radius: 50rem;
 
+    outline: 0;
     user-select: none;
     transition: all 0.15s ease-in-out;
+}
+
+.signup.scrolled {
+    color: white !important;
+    background: linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
 }
