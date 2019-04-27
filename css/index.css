@@ -1,21 +1,46 @@
-/* ---- particles.js container ---- */
-
+/* ---- default styling ---- */
 * {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
+/* ---- particles.js container ---- */
 #particles {
     z-index: -1;
+
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    min-height: -moz-available;
+    min-height: fill-available;
+
     background-image: url('../img/bg11.jpg');
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* ---- components ---- */
+
+/* - navbar related - */
+.navbar {
+    transition: background-color 0.35s linear, color 0.35s linear;
+}
+
 .navbar.scrolled {
     background-color: #fff !important;
-    transition: background-color 300ms linear, color 300ms linear;
+}
+
+.signup {
+    background: white;
+    color: #8089ff !important;
+    font-weight: 600;
+
+    border: 0 solid transparent;
+    border-radius: 50rem;
+
+    user-select: none;
+    transition: all 0.15s ease-in-out;
 }
