@@ -7,6 +7,8 @@ $(function () {
         var $toggler = $(".navbar-toggler-icon");
         var $signup = $(".signup");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        $nav.toggleClass('navbar-dark', $(this).scrollTop() < $nav.height());
+        $nav.toggleClass('navbar-light', $(this).scrollTop() > $nav.height());
         $links.toggleClass('text-dark', $(this).scrollTop() > $nav.height());
         $brand.toggleClass('text-dark', $(this).scrollTop() > $nav.height());
         $toggler.toggleClass('text-dark', $(this).scrollTop() > $nav.height());
@@ -21,18 +23,22 @@ function toggleNav() {
     var $brand = $(".navbar-brand");
     var $toggler = $(".navbar-toggler-icon");
     var $signup = $(".signup");
-    $nav.toggleClass('scrolled', $(this).scrollTop() < $nav.height());
-    $links.toggleClass('text-dark', $(this).scrollTop() < $nav.height());
-    $brand.toggleClass('text-dark', $(this).scrollTop() < $nav.height());
-    $toggler.toggleClass('text-dark', $(this).scrollTop() < $nav.height());
-    $signup.toggleClass('scrolled', $(this).scrollTop() < $nav.height());
+
+    if ($(this).scrollTop() < $nav.height()) {
+        $nav.toggleClass('scrolled');
+        $nav.toggleClass('navbar-dark');
+        $nav.toggleClass('navbar-light');
+        $links.toggleClass('text-dark');
+        $brand.toggleClass('text-dark');
+        $toggler.toggleClass('text-dark');
+        $signup.toggleClass('scrolled');
+    }
 }
 
 /* --- Stablish the current year so its always updated --- */
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
-/* --- Stablish the current year so its always updated --- */
-/* --- GETTING IT READY FOR MAKING IT TOMORROW --- */
+/* --- Here starts the function that toggles classes between some divs --- */
 $(".input_icon").click(function () {
     var bar = this;
     if ($(this).hasClass("magnet_icon")) {
