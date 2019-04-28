@@ -2,4 +2,13 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    min-width: 100px;
+}
+
+.card-title:before {
+    content: ">";
+}
+
+.underline {
+    background-image: linear-gradient(transparent 64px, #F243B3 50%, #FFCA47 100%);
 }
