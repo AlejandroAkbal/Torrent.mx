@@ -1,7 +1,5 @@
+/* - Adjustements - */
 .fit-content {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     min-width: 100px;
 }
 
@@ -9,6 +7,27 @@
     content: ">";
 }
 
+/* - Underline - */
 .underline {
-    background-image: linear-gradient(transparent 64px, #F243B3 50%, #FFCA47 100%);
+    border-bottom: .3em solid transparent;
+
+    -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#A8DBED), to(#E291E6));
+    -webkit-border-image: -webkit-linear-gradient(left, #A8DBED 0%, #E291E6 100%);
+    -o-border-image: -o-linear-gradient(left, #A8DBED 0%, #E291E6 100%);
+    border-image: -webkit-gradient(linear, left top, right top, from(#A8DBED), to(#E291E6));
+    border-image: linear-gradient(to right, #A8DBED 0%, #E291E6 100%);
+
+    border-image-slice: 1;
+}
+
+.underline span {
+    vertical-align: -0.4em;
+}
+
+/* - Signup button - */
+.signup:hover {
+    color: white !important;
+    background: -webkit-linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
+    background: -o-linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
+    background: linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
 }

@@ -43,12 +43,18 @@ html {
     height: fill-available;
 }
 
+.fit-content {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
 /* - footer related - */
 .bg-oscuro {
     background-color: #181A1B;
 }
 
-.brand {
+.bg-oscurisimo {
     background-color: #141617;
 }
 
@@ -80,4 +86,10 @@ html {
     background: -webkit-linear-gradient(45deg, #fd81b5 0%, #c961f7 50%, #8089ff 100%);
     background: -o-linear-gradient(45deg, #fd81b5 0%, #c961f7 50%, #8089ff 100%);
     background: linear-gradient(45deg, #fd81b5 0%, #c961f7 50%, #8089ff 100%);
+}
+
+.bg-gradient-creamy {
+    background: -webkit-linear-gradient(45deg, rgba(233, 220, 234, 1) 0%, rgba(230, 244, 244, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(233, 220, 234, 1) 0%, rgba(230, 244, 244, 1) 100%);
+    background: linear-gradient(45deg, rgba(233, 220, 234, 1) 0%, rgba(230, 244, 244, 1) 100%);
 }
