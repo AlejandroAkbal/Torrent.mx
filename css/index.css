@@ -4,11 +4,16 @@
     margin: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
 /* - navbar related - */
 .navbar {
+    -webkit-transition: background-color 0.35s linear, color 0.35s linear;
+    -o-transition: background-color 0.35s linear, color 0.35s linear;
     transition: background-color 0.35s linear, color 0.35s linear;
 }
 
@@ -24,15 +29,23 @@
 
     border: 1 solid transparent;
     border-radius: 50rem;
+    -webkit-box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 
     outline: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
+    -webkit-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
     transition: all 0.30s ease-in-out;
 }
 
 .signup.scrolled {
     color: white !important;
+    background: -webkit-linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
+    background: -o-linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
     background: linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
 }
 
@@ -47,10 +60,6 @@
 }
 
 /* - general things related - */
-.alejar {
-    padding-top: 25%;
-}
-
 .rounded-maximum {
     border-radius: 50rem;
 }
@@ -59,6 +68,10 @@
     height: -webkit-fill-available;
     height: -moz-available;
     height: fill-available;
+}
+
+.p-vh-50 {
+    padding-top: 50vh;
 }
 
 /* ---- components ---- */
@@ -70,6 +83,31 @@ input {
     background: none;
 }
 
+/* - Torrent and magnet related - */
+
+.active_bar {
+    width: 160px !important;
+}
+
+.submit_bar {
+    width: 0px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.magnet_icon {
+    content: url('../img/torrent_file.png');
+    height: 30px;
+    width: 30px;
+}
+
+.torrent_icon {
+    content: url('../img/torrent_file.png');
+    height: 30px;
+    width: 30px;
+}
+
 /* - footer related - */
 .bg-oscuro {
     background-color: #181A1B;
@@ -77,4 +115,34 @@ input {
 
 .brand {
     background-color: #141617;
+}
+
+.bg-gradient-blue {
+    background: -webkit-linear-gradient(45deg, #8089ff 0%, #54ceff 100%);
+    background: -o-linear-gradient(45deg, #8089ff 0%, #54ceff 100%);
+    background: linear-gradient(45deg, #8089ff 0%, #54ceff 100%);
+}
+
+.bg-gradient-deepblue {
+    background: -webkit-linear-gradient(45deg, #5E64BA 0%, #3E96BA 100%);
+    background: -o-linear-gradient(45deg, #5E64BA 0%, #3E96BA 100%);
+    background: linear-gradient(45deg, #5E64BA 0%, #3E96BA 100%);
+}
+
+.bg-gradient-peach {
+    background: -webkit-linear-gradient(45deg, #fe60a1 0%, #ff8765 100%);
+    background: -o-linear-gradient(45deg, #fe60a1 0%, #ff8765 100%);
+    background: linear-gradient(45deg, #fe60a1 0%, #ff8765 100%);
+}
+
+.bg-gradient-green {
+    background: -webkit-linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
+    background: -o-linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
+    background: linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
+}
+
+.bg-gradient-purple {
+    background: -webkit-linear-gradient(45deg, #fd81b5 0%, #c961f7 50%, #8089ff 100%);
+    background: -o-linear-gradient(45deg, #fd81b5 0%, #c961f7 50%, #8089ff 100%);
+    background: linear-gradient(45deg, #fd81b5 0%, #c961f7 50%, #8089ff 100%);
 }

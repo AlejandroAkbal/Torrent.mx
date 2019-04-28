@@ -62,19 +62,27 @@
         <div id="particles" class="h-100 w-100 position-absolute"></div>
 
         <!-- --- Two buttons --- -->
-        <div class="alejar d-flex justify-content-center bg-transparent">
-            <div class="border rounded-maximum px-1">
-                <input class="text-white" placeholder="Upload a torrent file&hellip;">
-                <i class="fab fa-instagram text-white input_icon"></i>
+        <div class="container-fluid d-flex justify-content-center position-absolute p-vh-50">
 
+            <!-- - Magnet - -->
+            <div class="input_bar border rounded-maximum p-1 bg-white d-flex">
+                <input class="magnet submit_bar text-black" placeholder="Paste a magnet link&hellip;">
+                <a href="#" class="input_icon magnet_icon"></a>
             </div>
+
+            <!-- - Torrent - -->
+            <div class="input_bar border rounded-maximum p-1 bg-white d-flex">
+                <input class="torrent submit_bar text-black" placeholder="Upload a torrent file&hellip;">
+                <a href="#" class="input_icon torrent_icon"></a>
+            </div>
+
         </div>
 
     </section>
 
 
     <!-- --- How does it work section --- -->
-    <section class="container-fluid bg-white py-5">
+    <section class=" container-fluid bg-white py-5">
         <div class="row">
             <div class="col-12 text-center my-3">
                 <h4 class="display-4">How does this work?</h4>
@@ -139,9 +147,10 @@
                 <div class="col-12 col-sm-2 mb-md-0 mb-3 text-center">
                     <h5>Media</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#!"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+                        <li class="border-0 rounded-maximum bg-gradient-purple my-2 mx-2"><a href="#!"><i class="fab fa-instagram text-white"></i></a></li>
+                        <li class="border-0 rounded-maximum bg-gradient-deepblue my-2 mx-3"><a href="#!"><i class="fab fa-facebook-f text-white"></i></a></li>
+                        <li class="border-0 rounded-maximum bg-gradient-blue my-2 mx-4"><a href="#!"><i class="fab fa-twitter text-white"></i></a></li>
+                        <li class="border-0 rounded-maximum bg-gradient-green my-2 mx-5"><a href="#!"><i class="fab fa-whatsapp text-white"></i></a></li>
                     </ul>
                 </div>
 
