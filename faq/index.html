@@ -57,17 +57,67 @@
     </nav>
 
     <!-- --- Content starts here --- -->
+    <!-- --- REMOVE VH 100 FOR PRODUCTIOON --- -->
 
     <section class="vh-100 container-fluid">
 
         <div class="row d-flex justify-content-center mx-5 mt-5">
+            <div class="col">
 
-            <div class="col-12">
+                <div id="accordion">
 
-                <p>hola</p>
+                    <!-- --- Question 1 --- -->
+                    <div class="card">
+                        <div class="card-body" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Question #1
+                                </button>
+                            </h5>
+                        </div>
 
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                A natural response to the natural question, indeed.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- --- Question 2 --- -->
+                    <div class="card">
+                        <div class="card-body" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Question #2
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                A natural response to the natural question, indeed.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- --- Question 3 --- -->
+                    <div class="card">
+                        <div class="card-body" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Question #3
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                A natural response to the natural question, indeed.
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
-
         </div>
 
     </section>
