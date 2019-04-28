@@ -3,7 +3,3 @@
     width: -moz-fit-content;
     width: fit-content;
 }
-
-* {
-    transition: border-width 3s linear !important, width 3s linear !important;
-}
