@@ -1,6 +1,6 @@
 # Torrent website
 
-##TODO
+## TODO
 - [ ] **Landing page** //ALMOST DONE
 - [x] **FAQ page**
 - [ ] **Plans page**
