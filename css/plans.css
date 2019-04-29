@@ -1,0 +1,6 @@
+.border-top-green {
+    border-top: .3rem solid transparent;
+
+    border-image: linear-gradient(to right, rgba(173, 255, 195, 1) 0%, rgba(89, 179, 112, 1) 100%);
+    border-image-slice: 1;
+}
