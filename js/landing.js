@@ -35,7 +35,6 @@ function toggleNav() {
     }
 }
 
-
 /* --- Here starts the function that toggles classes between some divs --- */
 $(".input_icon").click(function () {
     var bar = this;
