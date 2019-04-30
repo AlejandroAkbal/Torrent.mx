@@ -3,6 +3,6 @@
 ## TODO
 - [ ] **Landing page** //ALMOST DONE
 - [x] **FAQ page**
-- [ ] **Plans page**
-- [ ] **Login page**
+- [x] **Plans page**
+- [x] **Login page**
 - [ ] **Profile page**
