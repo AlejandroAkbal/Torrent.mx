@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Torrent Mxchine - Auth</title>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#181A1B">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- --- CSS lib --- -->
+    <link rel="stylesheet" href="../lib/bootstrap.min.css" />
+    <!-- --- CSS lib --- -->
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/auth.css" />
+
+</head>
+
+<body class="bg-gradient-green" id="start">
+
+    <!-- --- Content starts here --- -->
+    <section class="container-fluid min-vh-100">
+
+        <!-- --- Signin menu starts here --- -->
+        <div id="signin" class="card mt-v-50 slide-in-right">
+
+            <div class="card-body">
+
+                <div class="card-title">
+                    <h3 class="text-center">Please sign in</h3>
+                </div>
+
+                <hr>
+
+                <form action="" class="row">
+                    <input type="email" id="loginEmail" class="col-12 col-md-6 form-control rounded-0" placeholder="Email address" required>
+
+                    <input type="password" id="loginPassword" class="col-12 col-md-6 form-control rounded-0 my-1" placeholder="Password" required>
+
+                    <div class="col-12 checkbox mb-3">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+
+                    <button class="btn btn-lg btn-primary btn-block mb-2" type="submit">Sign in</button>
+
+                    <a href="#" onclick="toggleForm()">Or register now</a>
+
+
+                    <!-- --- Copyright --- -->
+                    <!-- --- USAR LAAS COLUMNAS --- -->
+                    <div class="col-12 text-right mt-3">
+                        <h6 class="d-inline" data-toggle="tooltip" data-placement="auto" title="Designed with &hearts; by Alejandro Akbal">Torrent Mxchine &copy;</h6>
+                        <h6 id="year" class="d-inline">2019</h6>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- --- Register menu starts here --- -->
+        <div id="register" class="card mt-v-50 slide-in-right d-none">
+
+            <div class="card-body">
+
+                <div class="card-title">
+                    <h3 class="text-center">Please register</h3>
+                </div>
+
+                <hr>
+
+                <form action="">
+                    <input type="email" id="registerUsername" class="form-control rounded-0" placeholder="Username" required>
+
+                    <input type="email" id="registerEmail" class="form-control rounded-0  my-1" placeholder="Email address" required>
+
+                    <input type="password" id="registerPassword" class="form-control rounded-0" placeholder="Password" required>
+
+                    <input type="password" id="registerPassword" class="form-control rounded-0 mt-1 mb-3" placeholder="Repeat password" required>
+
+                    <button class="btn btn-lg btn-primary btn-block mb-2" type="submit">Register</button>
+
+                    <a href="#" onclick="toggleForm()">Or log in</a>
+
+
+                    <!-- --- Copyright --- -->
+                    <div class="text-right mt-3">
+                        <h6 class="d-inline" data-toggle="tooltip" data-placement="auto" title="Designed with &hearts; by Alejandro Akbal">Torrent Mxchine &copy;</h6>
+                        <h6 id="year" class="d-inline">2019</h6>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- --- Libraries --- -->
+    <script type="text/javascript" src="../lib/jquery-3.4.0.min.js" defer></script>
+    <script type="text/javascript" src="../lib/bootstrap.bundle.min.js" defer></script>
+    <script type="text/javascript" src="../js/common.js" defer></script>
+    <script type="text/javascript" src="../js/auth.js" defer></script>
+</body></html>

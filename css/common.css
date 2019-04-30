@@ -32,6 +32,14 @@ html {
     transition: all 0.30s ease-in-out;
 }
 
+/* - Signup button - */
+.signup:hover {
+    color: white !important;
+    background: -webkit-linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
+    background: -o-linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
+    background: linear-gradient(45deg, #19d9b4 0%, #92d275 100%);
+}
+
 /* - general things related - */
 .rounded-maximum {
     border-radius: 50rem;
@@ -41,6 +49,10 @@ html {
     height: -webkit-fill-available;
     height: -moz-available;
     height: fill-available;
+}
+
+.mt-v-50 {
+    margin-top: 50%;
 }
 
 .fit-content {
