@@ -1,3 +1,4 @@
+/* ---- Animations ---- */
 .slide-in-right {
     -webkit-animation: slide-in-right .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slide-in-right .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -29,4 +30,11 @@
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+/* ---- Custom text for copyright ---- */
+#copyright {
+    z-index: 99;
+    bottom: 0;
+    right: 1%;
 }

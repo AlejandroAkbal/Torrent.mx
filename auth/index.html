@@ -18,82 +18,100 @@
 <body class="bg-gradient-green" id="start">
 
     <!-- --- Content starts here --- -->
-    <section class="container-fluid min-vh-100">
+    <section class="container-fluid min-vh-100" onclick="changeBackground()">
 
-        <!-- --- Signin menu starts here --- -->
-        <div id="signin" class="card mt-v-50 slide-in-right">
+        <!-- --- What mantains vertical and horizontal place --- -->
+        <div class="col-12 col-sm-9 col-md-6 col-lg-5 col-xl-3 mx-auto">
 
-            <div class="card-body">
+            <div id="signin" class="mt-v-50 slide-in-right">
 
-                <div class="card-title">
-                    <h3 class="text-center">Please sign in</h3>
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <div class="card-title">
+                            <h3 class="text-center display-5">Member Login</h3>
+                        </div>
+
+                        <hr>
+
+                        <!-- --- Text inputs --- -->
+                        <form action="" class="row justify-content-center">
+                            <input type="email" id="loginEmail" class="col-10 form-control rounded-0 mt-2" placeholder="Email address" required>
+
+                            <input type="password" id="loginPassword" class="col-10 form-control rounded-0 my-3" placeholder="Password" required>
+
+                            <button class="btn btn-lg btn-primary btn-block col-10 mb-2" type="submit">Sign in</button>
+
+                            <!-- --- Remember and forgot password --- -->
+                            <div class="col-10 checkbox mt-1 d-flex flex-wrap justify-content-between">
+                                <label class="text-muted">
+                                    <input type="checkbox" value="remember-me"> Remember me
+                                </label>
+
+                                <a href="#" class="text-muted">Forgot your password?</a>
+                            </div>
+
+                        </form>
+                    </div>
                 </div>
 
-                <hr>
-
-                <form action="" class="row">
-                    <input type="email" id="loginEmail" class="col-12 col-md-6 form-control rounded-0" placeholder="Email address" required>
-
-                    <input type="password" id="loginPassword" class="col-12 col-md-6 form-control rounded-0 my-1" placeholder="Password" required>
-
-                    <div class="col-12 checkbox mb-3">
-                        <label>
-                            <input type="checkbox" value="remember-me"> Remember me
-                        </label>
-                    </div>
-
-                    <button class="btn btn-lg btn-primary btn-block mb-2" type="submit">Sign in</button>
-
-                    <a href="#" onclick="toggleForm()">Or register now</a>
-
-
-                    <!-- --- Copyright --- -->
-                    <!-- --- USAR LAAS COLUMNAS --- -->
-                    <div class="col-12 text-right mt-3">
-                        <h6 class="d-inline" data-toggle="tooltip" data-placement="auto" title="Designed with &hearts; by Alejandro Akbal">Torrent Mxchine &copy;</h6>
-                        <h6 id="year" class="d-inline">2019</h6>
-                    </div>
-                </form>
-
+                <!-- --- Copyright and register --- -->
+                <div class="pt-2 d-flex justify-content-center">
+                    <p class="text-white">Don't have an account?
+                        <a href="#" class="" onclick="toggleForm()"><u>Register now!</u></a>
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- --- Register menu starts here --- -->
-        <div id="register" class="card mt-v-50 slide-in-right d-none">
 
-            <div class="card-body">
 
-                <div class="card-title">
-                    <h3 class="text-center">Please register</h3>
+            <!-- --- Register menu starts here --- -->
+            <div id="register" class="mt-v-50 slide-in-right d-none">
+
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <div class="card-title">
+                            <h3 class="text-center display-5">Register Form</h3>
+                        </div>
+
+                        <hr>
+
+                        <!-- --- Text inputs --- -->
+                        <form action="" class="row justify-content-center">
+                            <input type="text" id="registerUsername" class="col-10 form-control rounded-0 my-3" placeholder="Username" required>
+
+                            <input type="email" id="registerEmail" class="col-10 form-control rounded-0" placeholder="Email address" required>
+
+                            <input type="password" id="registerPassword" class="col-10 form-control rounded-0 my-3" placeholder="Password" required>
+
+                            <input type="password" id="registerPasswordConfirm" class="col-10 form-control rounded-0 mb-3" placeholder="Confirm password" required>
+
+                            <button class="btn btn-lg btn-primary btn-block col-10 mb-2" type="submit">Register</button>
+
+                        </form>
+                    </div>
                 </div>
 
-                <hr>
-
-                <form action="">
-                    <input type="email" id="registerUsername" class="form-control rounded-0" placeholder="Username" required>
-
-                    <input type="email" id="registerEmail" class="form-control rounded-0  my-1" placeholder="Email address" required>
-
-                    <input type="password" id="registerPassword" class="form-control rounded-0" placeholder="Password" required>
-
-                    <input type="password" id="registerPassword" class="form-control rounded-0 mt-1 mb-3" placeholder="Repeat password" required>
-
-                    <button class="btn btn-lg btn-primary btn-block mb-2" type="submit">Register</button>
-
-                    <a href="#" onclick="toggleForm()">Or log in</a>
-
-
-                    <!-- --- Copyright --- -->
-                    <div class="text-right mt-3">
-                        <h6 class="d-inline" data-toggle="tooltip" data-placement="auto" title="Designed with &hearts; by Alejandro Akbal">Torrent Mxchine &copy;</h6>
-                        <h6 id="year" class="d-inline">2019</h6>
-                    </div>
-                </form>
-
+                <!-- --- Copyright and register --- -->
+                <div class="pt-2 d-flex justify-content-center">
+                    <p class="text-white">Already have an account?
+                        <a href="#" class="" onclick="toggleForm()"><u>Log In now!</u></a>
+                    </p>
+                </div>
             </div>
+
         </div>
 
     </section>
+
+    <!-- --- Copyright --- -->
+    <div id="copyright" class="position-absolute">
+        <h6 class="d-inline" data-toggle="tooltip" data-placement="auto" title="Designed with &hearts; by Alejandro Akbal">Torrent Mxchine &copy;</h6>
+        <h6 id="year" class="d-inline">2019</h6>
+    </div>
 
     <!-- --- Libraries --- -->
     <script type="text/javascript" src="../lib/jquery-3.4.0.min.js" defer></script>
