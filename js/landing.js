@@ -55,7 +55,9 @@ $(".input_icon").click(function () {
     }
 });
 
+/* --- Function that toggles the display of the hidden magnet menu --- */
 var torrentSection = document.getElementById('torrentSection');
+
 function toggleTorrent() {
     torrentSection.classList.toggle('d-none');
 }

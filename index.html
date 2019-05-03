@@ -70,7 +70,8 @@
             <!-- - Magnet - -->
             <div class="input_bar border rounded-maximum p-1 bg-white d-flex">
                 <!-- - Temporal onClick until backend is done - -->
-                <input class="magnet submit_bar text-black" placeholder="Paste a magnet link&hellip;" onclick="toggleTorrent()">
+                <input class="magnet submit_bar text-black" placeholder="Paste a magnet link&hellip;"
+                    onclick="toggleTorrent()">
                 <a href="#" class="input_icon magnet_icon"></a>
             </div>
 
@@ -85,9 +86,9 @@
     </section>
 
     <!-- --- Hidden magnet section --- -->
-    <section id="torrentSection" class="container-fluid  min-vh-100 slide-in-bottom d-none">
-        <div class="row pt-vh-25">
-            
+    <section id="torrentSection" class="container-fluid bg-gradient-creamy min-vh-100 d-none">
+        <div class="row pt-vh-25 slide-in-bottom ">
+
             <div class="col-11 col-sm-9 col-md-7 col-lg-5 mx-auto bg-white">
 
                 <h2 class="text-center pt-2">Torrent Status</h2>
@@ -122,7 +123,9 @@
                         </tr>
                         <tr>
                             <th scope="row">Health</th>
-                            <td id="torrentHealth"><p class="border rounded-maximum text-center bg-warning">&nbsp;</p></td>
+                            <td id="torrentHealth">
+                                <p class="border rounded-maximum text-center bg-warning">&nbsp;</p>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
