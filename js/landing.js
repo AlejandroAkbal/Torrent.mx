@@ -54,3 +54,8 @@ $(".input_icon").click(function () {
         }
     }
 });
+
+var torrentSection = document.getElementById('torrentSection');
+function toggleTorrent() {
+    torrentSection.classList.toggle('d-none');
+}

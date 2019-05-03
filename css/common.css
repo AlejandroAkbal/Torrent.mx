@@ -45,13 +45,25 @@ html {
     border-radius: 50rem;
 }
 
-.vh-100 {
+.fill-available {
     height: -webkit-fill-available;
     height: -moz-available;
     height: fill-available;
 }
 
-.mt-v-50 {
+.pt-vh-50 {
+    padding-top: 50vh;
+}
+
+.pt-vh-25 {
+    padding-top: 25vh;
+}
+
+.pt-h-50 {
+    padding-top: 50%;
+}
+
+.mt-h-50 {
     margin-top: 50%;
 }
 

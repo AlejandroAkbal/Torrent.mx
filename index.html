@@ -35,7 +35,8 @@
         <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
             <ul class="navbar-nav ml-auto flex-nowrap">
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-white active" data-toggle="tooltip" data-placement="auto" title="You are already here!"><b>Home</b></a>
+                    <a href="#" class="nav-link text-white active" data-toggle="tooltip" data-placement="auto"
+                        title="You are already here!"><b>Home</b></a>
                 </li>
                 <li class="nav-item">
                     <a href="faq/" class="nav-link text-white"><b>FAQ</b></a>
@@ -50,7 +51,8 @@
                     <a href="auth/" class="nav-link text-white"><b>Login</b></a>
                 </li>
                 <li class="nav-item">
-                    <a href="auth/" class="nav-link signup text-center text-md-right px-md-3 py-md-1 mt-md-1 ml-md-1">Sign Up</a>
+                    <a href="auth/"
+                        class="nav-link signup text-center text-md-right px-md-3 py-md-1 mt-md-1 ml-md-1">Sign Up</a>
                 </li>
             </ul>
         </div>
@@ -63,11 +65,12 @@
         <div id="particles" class="h-100 w-100 position-absolute"></div>
 
         <!-- --- Two buttons --- -->
-        <div class="container-fluid d-flex justify-content-center position-absolute p-vh-50">
+        <div class="container-fluid d-flex justify-content-center position-absolute pt-vh-50">
 
             <!-- - Magnet - -->
             <div class="input_bar border rounded-maximum p-1 bg-white d-flex">
-                <input class="magnet submit_bar text-black" placeholder="Paste a magnet link&hellip;">
+                <!-- - Temporal onClick until backend is done - -->
+                <input class="magnet submit_bar text-black" placeholder="Paste a magnet link&hellip;" onclick="toggleTorrent()">
                 <a href="#" class="input_icon magnet_icon"></a>
             </div>
 
@@ -81,9 +84,57 @@
 
     </section>
 
+    <!-- --- Hidden section --- -->
+    <section id="torrentSection" class="container-fluid  min-vh-100 slide-in-bottom d-none">
+        <div class="row pt-vh-25">
+            
+            <div class="col-10 mx-auto bg-white">
+
+                <h2 class="text-center pt-2">Torrent Status</h2>
+
+                <table class="table mb-n2">
+                    <thead>
+                        <tr>
+                            <th scope="col">Torrent Name</th>
+                            <th id="torrentName"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Files</th>
+                            <td id="torrentFiles"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Size</th>
+                            <td id="torrentSize"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Created</th>
+                            <td id="torrentCreated"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seeders</th>
+                            <td id="torrentSeeders"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Peers</th>
+                            <td id="torrentPeers"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Health</th>
+                            <td id="torrentHealth"><p class="border rounded-maximum text-center bg-warning">&nbsp;</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </section>
+
 
     <!-- --- How does it work section --- -->
-    <section class=" container-fluid bg-white py-5">
+    <section class="container-fluid bg-white py-5">
         <div class="row">
             <div class="col-12 text-center my-3">
                 <h4 class="display-4">How does this work?</h4>
@@ -92,17 +143,20 @@
             <div class="col-12 col-sm-4 text-center">
                 <img src="https://internet.bs/themes/default/img/crown-icon.png" class="img-fluid">
                 <h5 class="text-left px-3">PART 1</h5>
-                <p class="text-secondary text-left px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="text-secondary text-left px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="col-12 col-sm-4 text-center">
                 <img src="https://internet.bs/themes/default/img/fingerprint-icon.png" class="img-fluid">
                 <h5 class="text-left px-3">PART 2</h5>
-                <p class="text-secondary text-left px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="text-secondary text-left px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="col-12 col-sm-4 text-center">
                 <img src="https://internet.bs/themes/default/img/handshake-icon.png" class="img-fluid">
                 <h5 class="text-left px-3">PART 3</h5>
-                <p class="text-secondary text-left px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="text-secondary text-left px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
 
         </div>
@@ -137,10 +191,14 @@
                 <div class="col-6 col-md-2 mb-2 mb-md-0 text-center">
                     <h5>Media</h5>
                     <ul class="list-unstyled">
-                        <li class="border-0 rounded-maximum bg-gradient-purple my-2 mx-2"><a href="#!"><i class="fab fa-instagram text-white"></i></a></li>
-                        <li class="border-0 rounded-maximum bg-gradient-deepblue my-2 mx-3"><a href="#!"><i class="fab fa-facebook-f text-white"></i></a></li>
-                        <li class="border-0 rounded-maximum bg-gradient-blue my-2 mx-4"><a href="#!"><i class="fab fa-twitter text-white"></i></a></li>
-                        <li class="border-0 rounded-maximum bg-gradient-green my-2 mx-5"><a href="#!"><i class="fab fa-whatsapp text-white"></i></a></li>
+                        <li class="border-0 rounded-maximum bg-gradient-purple my-2 mx-2"><a href="#!"><i
+                                    class="fab fa-instagram text-white"></i></a></li>
+                        <li class="border-0 rounded-maximum bg-gradient-deepblue my-2 mx-3"><a href="#!"><i
+                                    class="fab fa-facebook-f text-white"></i></a></li>
+                        <li class="border-0 rounded-maximum bg-gradient-blue my-2 mx-4"><a href="#!"><i
+                                    class="fab fa-twitter text-white"></i></a></li>
+                        <li class="border-0 rounded-maximum bg-gradient-green my-2 mx-5"><a href="#!"><i
+                                    class="fab fa-whatsapp text-white"></i></a></li>
                     </ul>
                 </div>
 
@@ -160,7 +218,8 @@
 
         <!-- --- Credit, please do not remove! --- -->
         <div class="text-center p-2 bg-oscurisimo">
-            <h6 class="d-inline" data-toggle="tooltip" data-placement="auto" title="Designed with &hearts; by Alejandro Akbal">Torrent Mxchine &copy;</h6>
+            <h6 class="d-inline" data-toggle="tooltip" data-placement="auto"
+                title="Designed with &hearts; by Alejandro Akbal">Torrent Mxchine &copy;</h6>
             <h6 id="year" class="d-inline">2019</h6>
         </div>
 
@@ -174,4 +233,6 @@
     <script type="text/javascript" src="lib/particles.min.js" defer></script>
     <script type="text/javascript" src="js/common.js" defer></script>
     <script type="text/javascript" src="js/landing.js" defer></script>
-</body></html>
+</body>
+
+</html>
