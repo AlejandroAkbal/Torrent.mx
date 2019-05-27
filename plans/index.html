@@ -41,7 +41,8 @@
                     <a href="../faq/" class="nav-link"><b>FAQ</b></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link active" data-toggle="tooltip" data-placement="auto" title="You are already here!"><b>Plans</b></a>
+                    <a href="#" class="nav-link active" data-toggle="tooltip" data-placement="auto"
+                        title="You are already here!"><b>Plans</b></a>
                 </li>
                 <li class="nav-item">
                     <a href="../tos/" class="nav-link"><b>Terms of Service</b></a>
@@ -50,7 +51,8 @@
                     <a href="../auth/" class="nav-link"><b>Login</b></a>
                 </li>
                 <li class="nav-item">
-                    <a href="../auth/" class="nav-link signup text-center text-md-right px-md-3 py-md-1 mt-md-1 ml-md-1">Sign Up</a>
+                    <a href="../auth/"
+                        class="nav-link signup text-center text-md-right px-md-3 py-md-1 mt-md-1 ml-md-1">Sign Up</a>
                 </li>
             </ul>
         </div>
@@ -74,7 +76,8 @@
 
                         <p class="text-left">The limited way to download at maximum speed your preferred torrents</p>
 
-                        <a href="#" class="card-link btn text-white d-block my-3 bg-gradient-evergreen">Buy now!</a>
+                        <a href="#" class="card-link btn text-white d-block my-3 bg-gradient-evergreen"
+                            onclick="toggleSelectionMenu()">Buy now!</a>
 
                     </div>
                 </div>
@@ -98,7 +101,8 @@
                             <li>Download 3 torrents at the same time at the maximum speed</li>
                         </ul>
 
-                        <a href="#" class="card-link btn text-white d-block my-3 bg-gradient-evergreen">Buy now!</a>
+                        <a href="#" class="card-link btn text-white d-block my-3 bg-gradient-evergreen"
+                            onclick="toggleSelectionMenu()">Buy now!</a>
 
                     </div>
                 </div>
@@ -117,7 +121,8 @@
 
                         <hr>
 
-                        <p class="text-left">The <b>bestest</b> way to download at maximum speed your preferred torrents</p>
+                        <p class="text-left">The <b>bestest</b> way to download at maximum speed your preferred torrents
+                        </p>
 
                         <ul class="text-left ml-3">
                             <li>Download 7.5 torrents at the same time at the maximum speed</li>
@@ -125,7 +130,8 @@
                             <li>Really helps us!</li>
                         </ul>
 
-                        <a href="#" class="card-link btn text-white d-block my-3 bg-gradient-evergreen">Buy now!</a>
+                        <a href="#" class="card-link btn text-white d-block my-3 bg-gradient-evergreen"
+                            onclick="toggleSelectionMenu()">Buy now!</a>
 
                     </div>
                 </div>
@@ -143,7 +149,8 @@
 
                         <hr>
 
-                        <p class="text-left">The <b>bestterest</b> way to download at maximum speed your preferred torrents</p>
+                        <p class="text-left">The <b>bestterest</b> way to download at maximum speed your preferred
+                            torrents</p>
                         <ul class="text-left ml-3">
                             <li>Download 15 torrents at the same time at the maximum speed</li>
                             <li>I dont really know lol</li>
@@ -151,13 +158,48 @@
                             <li>Really helps us!</li>
                         </ul>
 
-                        <a href="#" class="card-link btn text-white d-block my-3 bg-gradient-evergreen">Buy now!</a>
+                        <a href="#" class="card-link btn text-white d-block my-3 bg-gradient-evergreen"
+                            onclick="toggleSelectionMenu()">Buy now!</a>
 
                     </div>
                 </div>
             </div>
 
         </div>
+    </section>
+
+    <!-- --- Selection menu for the plan --- -->
+    <section id="SelectionMenu" class="container-fluid position-fixed">
+        <div class="row position-relative">
+
+            <!-- --- Content of the selection menu starts here --- -->
+            <div class="col-10 col-xl-5 mx-auto card pb-3">
+                <div class="row card-body border-top-green">
+
+                    <!-- --- Button to close selection menu plan --- -->
+                    <a id="closeButton" href="#" class="position-fixed h1" onclick="toggleSelectionMenu()">&times;</a>
+
+                    <p class="display-5 card-title col-12 text-center">Purchasing <span id="selectedPlan">some
+                            plan</span> for <span id="selectedPlanPrice" class="badge badge-success">0&euro;</span></p>
+
+                    <hr class="col-12 text-center">
+
+                    <!-- --- Paypal payment --- -->
+                    <div id="paypal" class="col-6 text-center pt-3">
+                        <p class="display-6 pb-2">Pay now with Paypal</p>
+                        <a href="#" class="h1 px-5 border rounded-maximum bg-primary text-white">P</a>
+                    </div>
+
+                    <!-- --- Bitcoin payment --- -->
+                    <div id="bitcoin" class="col-6 text-center pt-3">
+                        <p class="display-6 pb-2">Pay now with Bitcoin</p>
+                        <a href="#" class="h1 px-5 border rounded-maximum bg-warning text-white">B</a>
+                    </div>
+
+
+                </div>
+            </div>
+
     </section>
 
     <!-- --- Footer --- -->
@@ -188,10 +230,14 @@
                 <div class="col-6 col-md-2 mb-2 mb-md-0 text-center">
                     <h5>Media</h5>
                     <ul class="list-unstyled">
-                        <li class="border-0 rounded-maximum bg-gradient-purple my-2 mx-2"><a href="#!"><i class="fab fa-instagram text-white"></i></a></li>
-                        <li class="border-0 rounded-maximum bg-gradient-deepblue my-2 mx-3"><a href="#!"><i class="fab fa-facebook-f text-white"></i></a></li>
-                        <li class="border-0 rounded-maximum bg-gradient-blue my-2 mx-4"><a href="#!"><i class="fab fa-twitter text-white"></i></a></li>
-                        <li class="border-0 rounded-maximum bg-gradient-green my-2 mx-5"><a href="#!"><i class="fab fa-whatsapp text-white"></i></a></li>
+                        <li class="border-0 rounded-maximum bg-gradient-purple my-2 mx-2"><a href="#!"><i
+                                    class="fab fa-instagram text-white"></i></a></li>
+                        <li class="border-0 rounded-maximum bg-gradient-deepblue my-2 mx-3"><a href="#!"><i
+                                    class="fab fa-facebook-f text-white"></i></a></li>
+                        <li class="border-0 rounded-maximum bg-gradient-blue my-2 mx-4"><a href="#!"><i
+                                    class="fab fa-twitter text-white"></i></a></li>
+                        <li class="border-0 rounded-maximum bg-gradient-green my-2 mx-5"><a href="#!"><i
+                                    class="fab fa-whatsapp text-white"></i></a></li>
                     </ul>
                 </div>
 
@@ -211,7 +257,8 @@
 
         <!-- --- Credit, please do not remove! --- -->
         <div class="text-center p-2 bg-oscurisimo">
-            <h6 class="d-inline" data-toggle="tooltip" data-placement="auto" title="Designed with &hearts; by Alejandro Akbal">Torrent Mxchine &copy;</h6>
+            <h6 class="d-inline" data-toggle="tooltip" data-placement="auto"
+                title="Designed with &hearts; by Alejandro Akbal">Torrent Mxchine &copy;</h6>
             <h6 id="year" class="d-inline">2019</h6>
         </div>
 
@@ -223,4 +270,7 @@
     <script type="text/javascript" src="../lib/brands.min.js" defer></script>
     <script type="text/javascript" src="../lib/fontawesome.min.js" defer></script>
     <script type="text/javascript" src="../js/common.js" defer></script>
-</body></html>
+    <script type="text/javascript" src="../js/plans.js" defer></script>
+</body>
+
+</html>

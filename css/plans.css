@@ -4,3 +4,25 @@
     border-image: linear-gradient(to right, rgba(173, 255, 195, 1) 0%, rgba(89, 179, 112, 1) 100%);
     border-image-slice: 1;
 }
+
+#SelectionMenu {
+    z-index: 999;
+
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    overflow-x: hidden;
+
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#SelectionMenu > div {
+    top: 25%;
+}
+
+#closeButton {
+    z-index: 1000;
+}
