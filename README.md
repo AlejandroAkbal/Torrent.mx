@@ -1,8 +1,9 @@
 # Torrent website
+You can visit the live (modified) website at https://torrent.mx/
 
 ## TODO
-- [ ] **Landing page** //ALMOST DONE
+- [x] **Landing page** //ALMOST DONE
 - [x] **FAQ page**
 - [x] **Plans page**
 - [x] **Login page**
-- [ ] **Profile page**
+- [ ] **Profile page** //Working on it
