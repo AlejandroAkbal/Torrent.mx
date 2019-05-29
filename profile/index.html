@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="bg-gradient-veryligthgreen" id="start">
+<body class="bg-gradient-green" id="start">
 
     <!-- --- Navbar starts here --- -->
     <nav class="navbar navbar-expand-md px-5 shadow navbar-light">
@@ -62,56 +62,64 @@
         <div class="row my-4 mx-auto">
 
             <!-- --- Overview Section --- -->
-            <div class="col-12 col-md-4 card shadow">
-                <div class="card-body">
+            <div class="col-12 col-md-4">
+                <div class="card shadow">
+                    <div class="card-body">
 
-                    <!-- --- Table with user data --- -->
-                    <table class="table table-borderless table-sm mx-n3 my-n3">
-                        <tbody>
-                            <tr>
-                                <th scope="col">Username</th>
-                                <td id="userName" class="text-right">Voidless7</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Subscription</th>
-                                <td id="userSubscription" class="text-right">Free</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Torrents remaining</th>
-                                <td id="userRemainingTorrent" class="text-right">2</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Data remaining</th>
-                                <td id="userRemainingData" class="text-right">1GB</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Last login</th>
-                                <td id="userLastLogin" class="text-right">12/12/12</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <p class="text-center card-title h3">User info</p>
+
+                        <!-- --- Table with user data --- -->
+                        <table class="table table-borderless table-sm">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Username</th>
+                                    <td id="userName" class="text-right">Voidless7</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Subscription</th>
+                                    <td id="userSubscription" class="text-right">Free</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Torrents remaining</th>
+                                    <td id="userRemainingTorrent" class="text-right">2</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Data remaining</th>
+                                    <td id="userRemainingData" class="text-right">1GB</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Last login</th>
+                                    <td id="userLastLogin" class="text-right">12/12/12</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                 </div>
             </div>
 
             <!-- --- Element to take space on larger screens --- -->
-            <div class="col-1 d-none d-sm-block invisible card shadow"></div>
+            <!-- <div class="col-1 d-none d-sm-block invisible card shadow"></div> -->
 
             <!-- --- Main Content --- -->
-            <div class="col-12 col-md-7 my-3 my-md-0 card shadow">
-                <div class="card-body">
+            <div class="col-12 col-md-8 my-3 my-md-0 ">
+                <div class="card shadow">
+                    <div class="card-body">
+                    </div>
                 </div>
             </div>
 
             <!-- --- Navigation bar --- -->
-            <div class="col-12 col-md-4 my-3 shadow card">
-                    <ul class="list-group list-group-flush">
+            <div class="col-12 col-md-4 my-md-3">
+                <div class="card shadow">
+                    <ul class="list-group list-group-flush text-center">
                         <li class="list-group-item"><a href="#">Overview</a></li>
                         <li class="list-group-item"><a href="#settings">Settings</a></li>
                         <li class="list-group-item"><a href="#subscriptions">Subscriptions</a></li>
                         <li class="list-group-item"><a href="#connections">Connections</a></li>
                         <li class="list-group-item"><a href="#history">History</a></li>
                     </ul>
+                </div>
             </div>
 
 
