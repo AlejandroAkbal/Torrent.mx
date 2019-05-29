@@ -61,68 +61,95 @@
     <section class="container-fluid min-vh-100">
         <div class="row my-4 mx-auto">
 
-            <!-- --- Overview Section --- -->
+            <!-- --- User info PERMANENT --- -->
             <div class="col-12 col-md-4">
                 <div class="card shadow">
-                    <div class="card-body">
 
-                        <p class="text-center card-title h3">User info</p>
+                    <div class="card-header text-center display-6">User info</div>
 
-                        <!-- --- Table with user data --- -->
-                        <table class="table table-borderless table-sm">
-                            <tbody>
-                                <tr>
-                                    <th scope="row">Username</th>
-                                    <td id="userName" class="text-right">Voidless7</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Subscription</th>
-                                    <td id="userSubscription" class="text-right">Free</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Torrents remaining</th>
-                                    <td id="userRemainingTorrent" class="text-right">2</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Data remaining</th>
-                                    <td id="userRemainingData" class="text-right">1GB</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Last login</th>
-                                    <td id="userLastLogin" class="text-right">12/12/12</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="card-body my-md-n3 mx-md-n3">
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Username
+                                <span class="badge badge-primary badge-pill">Voidless7</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Subscription
+                                <span class="badge badge-success badge-pill">Free</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Torrents remaining
+                                <span class="badge badge-info badge-pill">1</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Data remaining
+                                <span class="badge badge-info badge-pill">1GB</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Last login
+                                <span class="badge badge-warning badge-pill">12/12/12</span>
+                            </li>
+                        </ul>
+
+                        
                     </div>
 
                 </div>
             </div>
 
-            <!-- --- Element to take space on larger screens --- -->
-            <!-- <div class="col-1 d-none d-sm-block invisible card shadow"></div> -->
-
-            <!-- --- Main Content --- -->
-            <div class="col-12 col-md-8 my-3 my-md-0 ">
+            <!-- --- Overview Section PERMUTABLE --- -->
+            <div class="col-12 col-md-8 my-3 my-md-0">
                 <div class="card shadow">
-                    <div class="card-body">
+
+                    <!-- Tab panes handler -->
+                    <div class="tab-content">
+
+                        <!-- Pane 1 -->
+                        <div class="tab-pane active" id="overview" role="tabpanel">
+                            <div class="card-header text-center display-6">Last Downloaded Torrents</div>
+
+                            <div class="card-body">
+                                <table>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Pane 2 -->
+                        <div class="tab-pane" id="settings" role="tabpanel">settings</div>
+
+                        <!-- Pane 3 -->
+                        <div class="tab-pane" id="subscriptions" role="tabpanel">subscriptions</div>
+
+                        <!-- Pane 4 -->
+                        <div class="tab-pane" id="connections" role="tabpanel">connections</div>
+
+                        <!-- Pane 5 -->
+                        <div class="tab-pane" id="history" role="tabpanel">history</div>
                     </div>
                 </div>
             </div>
 
-            <!-- --- Navigation bar --- -->
+            <!-- --- Navigation bar PERMANENT --- -->
             <div class="col-12 col-md-4 my-md-3">
-                <div class="card shadow">
-                    <ul class="list-group list-group-flush text-center">
-                        <li class="list-group-item"><a href="#">Overview</a></li>
-                        <li class="list-group-item"><a href="#settings">Settings</a></li>
-                        <li class="list-group-item"><a href="#subscriptions">Subscriptions</a></li>
-                        <li class="list-group-item"><a href="#connections">Connections</a></li>
-                        <li class="list-group-item"><a href="#history">History</a></li>
-                    </ul>
+                <div class="shadow text-center">
+
+                    <!-- List group handler -->
+                    <div class="list-group" id="myList" role="tablist">
+                        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#overview"
+                            role="tab">Overview</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings"
+                            role="tab">Settings</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#subscriptions"
+                            role="tab">Subscriptions</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#connections"
+                            role="tab">Connections</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#history"
+                            role="tab">History</a>
+                    </div>
+
                 </div>
             </div>
-
-
 
 
         </div>
