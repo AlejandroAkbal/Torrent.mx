@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../lib/bootstrap.min.css" />
     <!-- --- CSS lib --- -->
     <link rel="stylesheet" href="../css/common.css" />
-    <link rel="stylesheet" href="../css/plans.css" />
 
 </head>
 
@@ -71,28 +70,28 @@
 
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Username
+                                Username
                                 <span id="userName" class="badge badge-primary badge-pill">Voidless7</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Subscription
+                                Subscription
                                 <span id="userSubscription" class="badge badge-success badge-pill">Free</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Torrents remaining
+                                Torrents remaining
                                 <span id="userRemainingTorrent" class="badge badge-info badge-pill">1</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Data remaining
+                                Data remaining
                                 <span id="userRemainingData" class="badge badge-info badge-pill">1GB</span>
                             </li>
                             <li class="list-group-item d-flex justify-content-between align-items-center">
-                                    Last login
+                                Last login
                                 <span id="userLastLogin" class="badge badge-warning badge-pill">12/12/12</span>
                             </li>
                         </ul>
 
-                        
+
                     </div>
 
                 </div>
@@ -100,7 +99,7 @@
 
             <!-- --- Overview Section PERMUTABLE --- -->
             <div class="col-12 col-md-8 my-3 my-md-0">
-                <div class="card shadow">
+                <div class="card shadow overflow-auto">
 
                     <!-- Tab panes handler -->
                     <div class="tab-content">
@@ -110,85 +109,147 @@
                             <div class="card-header text-center display-6">Last Downloaded Torrents</div>
 
                             <!-- Exported last downloads from the user -->
-                                <table class="table table-striped text-center">
+                            <div class="table-responsive">
+                                <table class="table table-striped text-center table-hover table-sm text-nowrap">
                                     <thead>
-                                      <tr>
-                                        <th scope="col">Name</th>
-                                        <th scope="col">Seeders</th>
-                                        <th scope="col">Magnet</th>
-                                        <th scope="col">Date added</th>
-                                      </tr>
+                                        <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Seeders</th>
+                                            <th scope="col">Magnet</th>
+                                            <th scope="col">Date added</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
-                                        <td scope="row">Shrek</td>
-                                        <td>19</td>
-                                        <td><a href="#" >Link</a></td>
-                                        <td>12/12/12</td>
-                                      </tr>
-                                      <tr>
-                                        <td scope="row">Shrek 2</td>
-                                        <td>15</td>
-                                        <td><a href="#" >Link</a></td>
-                                        <td>12/12/12</td>
-                                      </tr>
-                                      <tr>
-                                        <td scope="row">Shrek 3</td>
-                                        <td>23</td>
-                                        <td><a href="#" >Link</a></td>
-                                        <td>12/12/12</td>
-                                      </tr>
-                                      <tr>
-                                        <td scope="row">Shrek 4</td>
-                                        <td>59</td>
-                                        <td><a href="#" >Link</a></td>
-                                        <td>12/12/12</td>
-                                      </tr>
-                                      <tr>
-                                        <td scope="row">Shrek 5</td>
-                                        <td>12</td>
-                                        <td><a href="#" >Link</a></td>
-                                        <td>12/12/12</td>
-                                      </tr>
+                                        <tr>
+                                            <td scope="row">Shrek</td>
+                                            <td>19</td>
+                                            <td><a href="#">Link</a></td>
+                                            <td>12/12/12</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Shrek 2</td>
+                                            <td>15</td>
+                                            <td><a href="#">Link</a></td>
+                                            <td>12/12/12</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Shrek 3</td>
+                                            <td>23</td>
+                                            <td><a href="#">Link</a></td>
+                                            <td>12/12/12</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Shrek 4</td>
+                                            <td>59</td>
+                                            <td><a href="#">Link</a></td>
+                                            <td>12/12/12</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">Shrek 5</td>
+                                            <td>12</td>
+                                            <td><a href="#">Link</a></td>
+                                            <td>12/12/12</td>
+                                        </tr>
                                     </tbody>
-                                  </table>
+                                </table>
+                            </div>
                         </div>
 
-                        <!-- Pane 2 -->
-                        <div class="tab-pane" id="settings" role="tabpanel">settings</div>
+                        <!-- Pane 2: Account settings -->
+                        <div class="tab-pane" id="settings" role="tabpanel">
 
-                        <!-- Pane 3 -->
-                        <div class="tab-pane" id="subscriptions" role="tabpanel">subscriptions</div>
+                            <div class="card-header text-center display-6">Account Settings</div>
 
-                        <!-- Pane 4 -->
-                        <div class="tab-pane" id="connections" role="tabpanel">connections</div>
+                            <div class="card-body">
 
-                        <!-- Pane 5 -->
-                        <div class="tab-pane" id="history" role="tabpanel">history</div>
+                                <!-- Form to change settings -->
+                                <form>
+                                    <div class="form-row text-nowrap overflow-hidden">
+                                        <!-- Current email -->
+                                        <div class="form-group col-md-6">
+                                            <label for="settingsCurrentEmail">Current email address</label>
+                                            <input type="email" class="form-control" id="settingsCurrentEmail"
+                                                aria-describedby="emailHelp" placeholder="user@example.com" readonly>
+                                        </div>
+
+                                        <!-- New email -->
+                                        <div class="form-group col-md-6">
+                                            <label for="settingsNewEmail">New email address</label>
+                                            <input type="email" class="form-control" id="settingsNewEmail"
+                                                aria-describedby="emailHelp"
+                                                placeholder="Leave blank if you aren't going to change the email">
+                                        </div>
+
+                                        <!-- Current password -->
+                                        <div class="form-group col-md-4">
+                                            <label for="settingsCurrentPassword">Current password</label>
+                                            <input type="password" class="form-control" id="settingsCurrentPassword"
+                                                placeholder="Type your current password">
+                                        </div>
+
+                                        <!-- New password -->
+                                        <div class="form-group col-md-4">
+                                            <label for="settingsNewPassword">New password</label>
+                                            <input type="password" class="form-control" id="settingsNewPassword"
+                                                placeholder="Type your new password">
+                                        </div>
+
+                                        <!-- Confirm new password -->
+                                        <div class="form-group col-md-4">
+                                            <label for="settingsConfirmNewPassword">Confirm new password</label>
+                                            <input type="password" class="form-control" id="settingsConfirmNewPassword"
+                                                placeholder="Confirm your new password">
+                                        </div>
+
+                                        <!-- Slider because why not -->
+                                        <div class="custom-control custom-switch mb-3 mx-auto">
+                                            <input type="checkbox" class="custom-control-input" id="settingsSwitch">
+                                            <label class="custom-control-label" for="settingsSwitch">Something</label>
+                                        </div>
+
+                                        <!-- Submit changes -->
+                                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+
+
+
+
                     </div>
+
+                    <!-- Pane 3 -->
+                    <div class="tab-pane" id="subscriptions" role="tabpanel">subscriptions</div>
+
+                    <!-- Pane 4 -->
+                    <div class="tab-pane" id="connections" role="tabpanel">connections</div>
+
+                    <!-- Pane 5 -->
+                    <div class="tab-pane" id="history" role="tabpanel">history</div>
                 </div>
             </div>
+        </div>
 
-            <!-- --- Navigation bar PERMANENT --- -->
-            <div class="col-12 col-md-4 my-md-3">
-                <div class="shadow text-center">
+        <!-- --- Navigation bar PERMANENT --- -->
+        <div class="col-12 col-md-4 my-md-3">
+            <div class="shadow text-center">
 
-                    <!-- List group handler -->
-                    <div class="list-group" id="myList" role="tablist">
-                        <a class="list-group-item list-group-item-action active" data-toggle="list" href="#overview"
-                            role="tab">Overview</a>
-                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings"
-                            role="tab">Settings</a>
-                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#subscriptions"
-                            role="tab">Subscriptions</a>
-                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#connections"
-                            role="tab">Connections</a>
-                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#history"
-                            role="tab">History</a>
-                    </div>
-
+                <!-- List group handler -->
+                <div class="list-group" id="myList" role="tablist">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#overview"
+                        role="tab">Overview</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#settings"
+                        role="tab">Settings</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#subscriptions"
+                        role="tab">Subscriptions</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#connections"
+                        role="tab">Connections</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#history"
+                        role="tab">History</a>
                 </div>
+
             </div>
+        </div>
 
 
         </div>
@@ -222,14 +283,22 @@
                 <div class="col-6 col-md-2 mb-2 mb-md-0 text-center">
                     <h5>Media</h5>
                     <ul class="list-unstyled">
-                        <a href="#!"><li class="border-0 rounded-maximum bg-gradient-purple my-2 mx-2"><i
-                                    class="fab fa-instagram text-white"></i></li></a>
-                        <a href="#!"><li class="border-0 rounded-maximum bg-gradient-deepblue my-2 mx-3"><i
-                                    class="fab fa-facebook-f text-white"></i></li></a>
-                        <a href="#!"><li class="border-0 rounded-maximum bg-gradient-blue my-2 mx-4"><i
-                                    class="fab fa-twitter text-white"></i></li></a>
-                        <a href="#!"><li class="border-0 rounded-maximum bg-gradient-green my-2 mx-5"><i
-                                    class="fab fa-whatsapp text-white"></i></li></a>
+                        <a href="#!">
+                            <li class="border-0 rounded-maximum bg-gradient-purple my-2 mx-2"><i
+                                    class="fab fa-instagram text-white"></i></li>
+                        </a>
+                        <a href="#!">
+                            <li class="border-0 rounded-maximum bg-gradient-deepblue my-2 mx-3"><i
+                                    class="fab fa-facebook-f text-white"></i></li>
+                        </a>
+                        <a href="#!">
+                            <li class="border-0 rounded-maximum bg-gradient-blue my-2 mx-4"><i
+                                    class="fab fa-twitter text-white"></i></li>
+                        </a>
+                        <a href="#!">
+                            <li class="border-0 rounded-maximum bg-gradient-green my-2 mx-5"><i
+                                    class="fab fa-whatsapp text-white"></i></li>
+                        </a>
                     </ul>
                 </div>
 
